@@ -1,0 +1,41 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "netflix-project-9760f",
+          "appId": "1:441992076502:android:c2405f264897219c2f3d77",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "netflix-project-9760f",
+          "appId": "1:441992076502:ios:af3ad4f96c83d22f2f3d77",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "netflix-project-9760f",
+          "appId": "1:441992076502:ios:af3ad4f96c83d22f2f3d77",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "netflix-project-9760f",
+          "configurations": {
+            "android": "1:441992076502:android:c2405f264897219c2f3d77",
+            "ios": "1:441992076502:ios:af3ad4f96c83d22f2f3d77",
+            "macos": "1:441992076502:ios:af3ad4f96c83d22f2f3d77",
+            "web": "1:441992076502:web:3ff76889b7bc04b12f3d77",
+            "windows": "1:441992076502:web:f5c82e98ea7d39b92f3d77"
+          }
+        }
+      }
+    }
+  }
+}

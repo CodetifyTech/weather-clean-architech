@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "441992076502",
+    "project_id": "netflix-project-9760f",
+    "storage_bucket": "netflix-project-9760f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441992076502:android:c2405f264897219c2f3d77",
+        "android_client_info": {
+          "package_name": "com.example.weather_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441992076502-84ofgi5url35qu6s1qkvupfp68gjpcu6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.weather_flutter",
+            "certificate_hash": "4832ee8c4f7c5b1ccc983a69f9876e6c99843007"
+          }
+        },
+        {
+          "client_id": "441992076502-6ca28q6cnlu8b5jpn5lfamaqpsmticjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2zf8GLq-LUr-142_yYrSjCJqU-DEsACc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441992076502-6ca28q6cnlu8b5jpn5lfamaqpsmticjg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "441992076502-4vn53kg5sgse7pcr3cj2gb13482b9aad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.weatherFlutter"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
