@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:pinput/pinput.dart';
 import 'package:weather_flutter/app_view.dart';
@@ -12,6 +13,8 @@ class PinPutView extends StatefulWidget {
 }
 
 class _PinPutViewState extends State<PinPutView> {
+  final pinController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return WeatherScaffold(
@@ -69,7 +72,7 @@ class _PinPutViewState extends State<PinPutView> {
     return Center(
       child: Pinput(
         length: length,
-        // controller: _controller.pinputController,
+        controller: pinController,
         // focusNode: _controller.focusNode,
         defaultPinTheme: defaultPinTheme,
         focusedPinTheme: defaultPinTheme.copyWith(
@@ -87,12 +90,22 @@ class _PinPutViewState extends State<PinPutView> {
         closeKeyboardWhenCompleted: false,
         onCompleted: (pin) async {
           await hideKeyboard(context);
-          Navigator.push(
-            context,
-            MaterialPageRoute(
-              builder: (context) => const AppView(),
-            ),
-          );
+
+          try {
+            final cre = PhoneAuthProvider.credential(
+                verificationId: widget.verificationId,
+                smsCode: pinController.text);
+            await FirebaseAuth.instance.signInWithCredential(cre);
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => const AppView(),
+              ),
+            );
+          } catch (e) {
+            print(e.toString());
+          }
+
           print("ok");
         },
         onChanged: (pin) {},
